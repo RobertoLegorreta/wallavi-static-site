@@ -1,0 +1,27 @@
+.banner{
+    background-color: #ef6a6a;
+    height: 640px;
+}
+
+.banner-title{
+    margin: 0;
+    text-align: center;
+    padding-top: 115px;
+    text-transform: uppercase;
+    color: #fceaea;
+    font-family: "Roboto-Bold";
+    font-size: 40px;
+}
+
+.banner-title span{
+    font-size: 21px;
+}
+
+.banner img{
+    width: 800px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -150px;
+}

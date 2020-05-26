@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import LayersPromo from './components/Layers';
 
 function App() {
+  const layers = [
+    {id:'hdjhsuiue77t', style: {background: '#ee5958', bottom: "100px"}, text: "Quedan 15 dias"},
+    {id:'jdauyiyuidui', style: {background: '#323946', bottom: "20px"}, text: ["Aprovecha las promociones por preventa. ", <br/>,  "Lanzamiento oficial 01/jul/2020"]}
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Banner />
+      {layers?.map((element) => (
+        <LayersPromo
+          key = {element.id}
+          id = {element.id}
+          style = {element.style}
+          text = {element.text}
+        />
+      ))}
     </div>
   );
 }

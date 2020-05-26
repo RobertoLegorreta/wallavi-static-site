@@ -1,0 +1,13 @@
+.layers{
+    display: table;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    position: fixed;
+    left: 20px;
+}
+
+.layers p{
+    padding: 0 20px;
+    font-family: "Roboto-Medium";
+}
