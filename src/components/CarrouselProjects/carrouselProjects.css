@@ -40,3 +40,42 @@
     border: none !important;
     -moz-outline-style: none !important;
 }
+
+.modal-position{
+    top:0;
+    position: fixed;
+    z-index: 12;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: rgba(102, 102, 102, 0.8);
+}
+
+.body-modal{
+    width: 720px;
+    height: 390px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-right-modal{
+    flex: 1;
+    margin: 20px;
+}
+
+.container-left-modal{
+    flex: 2;
+}
+
+.container-image-modal{
+    height: 390px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: black;
+}

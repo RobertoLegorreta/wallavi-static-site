@@ -36,32 +36,35 @@ function App() {
     {image: "/static/media/logo.ed3bf68e.png"}
   ]
   return (
-    <div className="App">
-      <Header />
-      <Banner />
-      {informationPerson?.map((element, index) => (
-          <LeftSection 
-            key = {index}
-            title = {element.title}
-            image = {element.image}
-            text = {element.text}/> 
-      ))}
-      {informationDevelopment?.map((element, index) => (
-          <UnderDevelopment 
-            key = {index}
-            title = {element.title}
-            image = {element.image}
-            textTitle = {element.textTitle}
-            textDescription = {element.textDescription}
-            textCurrentPhase = {element.textCurrentPhase}
-          /> 
-      ))}
-      <CarrouselProject />
-      <Brands 
-        images = {images}
-      />
-      <Reviews />
-      <Footer />
+    <div>
+      <div className="App">
+        <Header />
+        <Banner />
+        {informationPerson?.map((element, index) => (
+            <LeftSection 
+              key = {index}
+              title = {element.title}
+              image = {element.image}
+              text = {element.text}/> 
+        ))}
+        {informationDevelopment?.map((element, index) => (
+            <UnderDevelopment 
+              key = {index}
+              title = {element.title}
+              image = {element.image}
+              textTitle = {element.textTitle}
+              textDescription = {element.textDescription}
+              textCurrentPhase = {element.textCurrentPhase}
+            /> 
+        ))}
+        <CarrouselProject />
+        <Brands 
+          images = {images}
+        />
+        <Reviews />
+        <Footer />
+      </div>
+      <div id="parentModal" />
     </div>
   );
 }

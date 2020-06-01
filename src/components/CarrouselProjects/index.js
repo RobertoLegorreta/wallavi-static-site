@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import "../../styles.css";
 import "./carrouselProjects.css";
@@ -54,21 +55,56 @@ const CarrouselProjects = (props) => {
         arrows: false
     };
 
-    return (
-      <div className="section-slider">
-        <h2 className="section-h2"> Lastest Projects Developed</h2>
-        <Slider {...settings}>
-            {informationDevelopment?.map((element, index) => (
-                <div key = {index} className="container-all-images">
-                    <div
-                        className = "slider-container-images"
-                        style={{backgroundImage: `url("${element.image}")`}}
-                    >
+
+    const modal = (elementInformation) => {
+        return (
+            <div className="modal-position">
+                <div className="body-modal">
+                    <div className="container-left-modal">
+                        <div
+                            className="container-image-modal"
+                            style={{ backgroundImage: `url("${elementInformation.image}")` }}
+                        >
+                        </div>
+                    </div>
+                    <div className="container-right-modal">
+                        <div>
+                            {elementInformation.title}
+                        </div>
+                        <hr />
+                        <div>
+                            {elementInformation.textDescription}
+                        </div>
                     </div>
                 </div>
-            ))}
-        </Slider>
-      </div>
+            </div>
+        )
+    }
+
+    function openInfo(element) {
+        let parentModal = document.getElementById("parentModal");
+        let modalDetail = modal(element)
+        if (parentModal) {
+            ReactDOM.render(modalDetail, parentModal);
+        }
+    }
+
+    return (
+        <div className="section-slider">
+            <h2 className="section-h2"> Lastest Projects Developed</h2>
+            <Slider {...settings}>
+                {informationDevelopment?.map((element, index) => (
+                    <div key={index} className="container-all-images">
+                        <div
+                            className="slider-container-images"
+                            style={{ backgroundImage: `url("${element.image}")` }}
+                            onClick={e => openInfo(element)}
+                        >
+                        </div>
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
 }
 
