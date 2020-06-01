@@ -1,0 +1,29 @@
+.under-develop-section{
+    margin-top: 200px;
+}
+
+.under-develop-body-section {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1024px;
+    justify-content: space-around;
+}
+
+.under-develop-images-section {
+    width: 380px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+}
+
+.under-develop-text-section {
+    width: 500px;
+    max-width: 100%;
+}
+
+.under-develop-body-section p {
+    font-size: 18px;
+    line-height: 1.3;
+}

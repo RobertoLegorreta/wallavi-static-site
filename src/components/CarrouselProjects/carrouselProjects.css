@@ -1,0 +1,42 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.section-slider{
+    margin-top: 100px;
+}
+
+.slider-container-images{
+    height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.slick-center{
+    transform: scale(1.05);
+}
+
+.slider-container-images:active, .slider-container-images:focus{
+    
+}
+
+.center-slider{
+    height: 450px;
+}
+
+.center-slider:active, .center-slider:focus {
+    
+}
+
+.container-all-images{
+    
+}
+
+.container-all-images:active, .container-all-images:focus{
+    outline: none !important;
+    border: none !important;
+    -moz-outline-style: none !important;
+}

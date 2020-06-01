@@ -8,8 +8,8 @@ const Banner = () => {
     return(
         <div className = "banner">
             <h1 className = "banner-title">
-                Llevar el inventario de tu negocio <br/>
-                <span> nunca fue tan fácil </span>
+                WORLD CLASS WEB APPS <br/>
+                <span> FROM DESING TO PRODUCTION </span>
             </h1>
             <img src={producto} alt=""/>
         </div>

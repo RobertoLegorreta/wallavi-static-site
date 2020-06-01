@@ -1,0 +1,22 @@
+.reviews-section{
+    margin: 120px auto;
+    width: 96%;
+    max-width: 800px;
+    
+}
+
+.reviews-section h2{
+    font-size: 20px;
+    font-family: "Roboto-Bold";
+    text-align: center;
+}
+
+.client-review-text{
+    text-align: center;
+    font-size: 21px;
+}
+
+.client-review{
+    text-align: right;
+    font-family: "Roboto-Medium";
+}

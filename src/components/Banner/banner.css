@@ -1,5 +1,5 @@
 .banner{
-    background-color: #ef6a6a;
+    background-color: #4476d4;
     height: 640px;
 }
 
@@ -24,4 +24,11 @@
     left: 0;
     right: 0;
     bottom: -150px;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
 }
