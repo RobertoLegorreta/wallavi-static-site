@@ -1,5 +1,5 @@
 .under-develop-section{
-    margin-top: 200px;
+    margin-top: 220px;
 }
 
 .under-develop-body-section {
@@ -12,10 +12,19 @@
 }
 
 .under-develop-images-section {
-    width: 380px;
-    height: 200px;
+    margin-right: 20px;
+    width: 450PX;
+    height: 270px;
     background-size: contain;
     background-position: center;
+    flex: none;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 37px 0px rgba(0,0,0,0.29); */
+}
+
+.under-develop-images-section img {
+    width: 100%; 
 }
 
 .under-develop-text-section {
@@ -24,6 +33,23 @@
 }
 
 .under-develop-body-section p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
+}
+
+@media (max-width: 700px) {
+    .under-develop-body-section{
+        display: block;
+    }
+    .under-develop-images-section {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .under-develop-text-section {
+        margin: 30px auto;
+        width: 94%;
+    }
+    .under-develop-section{
+        margin-top: 170px;
+    }
 }

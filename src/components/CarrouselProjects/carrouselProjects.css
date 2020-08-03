@@ -6,13 +6,15 @@
 }
 
 .slider-container-images{
-    height: 380px;
+    height: 450px;
+    width: 280px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     margin: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .slick-center{
@@ -24,7 +26,7 @@
 }
 
 .center-slider{
-    height: 450px;
+    height: 520px;
 }
 
 .center-slider:active, .center-slider:focus {
@@ -41,23 +43,30 @@
     -moz-outline-style: none !important;
 }
 
-.modal-position{
-    top:0;
+.transparent{
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    z-index: 12;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    top: 0;
+    z-index: 10;
     background: rgba(102, 102, 102, 0.8);
 }
 
+.modal-position{
+    
+}
+
 .body-modal{
-    width: 720px;
-    height: 390px;
+    position: fixed;
+    z-index: 11;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-310px);
+    width: 850px;
+    height: 620px;
     background-color: white;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -72,10 +81,85 @@
 }
 
 .container-image-modal{
-    height: 390px;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: black;
+}
+
+.title-container-modal{
+    display: flex;
+    align-items: center;
+}
+
+.title-modal{
+    font-family: "Roboto-Medium";
+    font-size: 18px;
+}
+
+hr{
+    border: 1px solid #f3f3f3;
+}
+
+.logo-modal{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.close-modal{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.descrip-modal{
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .body-modal{
+        width: 700px;
+    }
+}
+
+@media (max-width: 710px) {
+    .body-modal{
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .body-modal{
+        width: 100%;
+        height: 100%;
+        display: block;
+        top: 0;
+        overflow: auto;
+        transform: translate(0);
+    }
+    .container-left-modal{
+        height: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slick-center{
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 500px) {
+    .slider-container-images{
+        margin: 0 auto;
+        width: 250px;
+    }
+    .section-slider{
+        margin-top: 170px;
+    }
 }

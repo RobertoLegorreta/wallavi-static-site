@@ -12,28 +12,28 @@ import CarrouselProject from './components/CarrouselProjects';
 function App() {
   const informationPerson = [
     {
-      title: "ABOUT ME",
-      image: "http://www.schmidthk.com/wp-content/uploads/2014/06/shutterstock_103693073-300x277.jpg",
-      text: "Hola mi nombre es Roberto Legorreta soy diseñador y desarrollador de software, he trabajado en multiples proyectos a lo largo de los ultimos años para todo tipo de empresas, desde pequeñas empresas hasta empresas extranjeras. he tenido la fortuna de colaborar con desarrolladores de muchas partes del mundo."
+      title: "LO QUE HACEMOS 🚀",
+      image: "",
+      text: "Desarrollamos software de gran calidad con una de las inversiones más bajas en el mercado. Todos los sistemas que desarrollamos están diseñados a la medida, aportando una gran experiencia para el usuario. Sistemas altamente seguros, escalables y de gran desempeño."
     }
   ]
   const informationDevelopment = [
     {
-      title: "UNDER DEVELOPMENT",
-      image: "http://www.schmidthk.com/wp-content/uploads/2014/06/shutterstock_103693073-300x277.jpg",
-      textTitle: "Project Name: Cabsi",
-      textDescription: "Description: Análisis, diseño y desarrollo de aplicación para ayudar a las personas a trasladarse de un lugar a otro de mejor manera",
-      textCurrentPhase: "Current phase: Web Design",
+      title: "👨‍💻 EN DESARROLLO",
+      image: "",
+      textTitle: "Proyecto: Tu cooperativa",
+      textDescription: "Descripción: Desarrollo de aplicación web responsiva y progresiva, servida en AWS, utilizando bases de datos relacionales y siguiendo un enfoque de microservicios, ",
+      textCurrentPhase: "Fase actual: Implementación de seguridad",
     }
   ]
   const images = [
-    {image: "/static/media/logo.ed3bf68e.png"},
-    {image: "/static/media/logo.ed3bf68e.png"},
-    {image: "/static/media/logo.ed3bf68e.png"},
-    {image: "/static/media/logo.ed3bf68e.png"},
-    {image: "/static/media/logo.ed3bf68e.png"},
-    {image: "/static/media/logo.ed3bf68e.png"},
-    {image: "/static/media/logo.ed3bf68e.png"}
+    {image: "./brands/donparrafa.png"},
+    {image: "./brands/goho.png"},
+    // {image: "./brands/pngu.png"},
+    {image: "./brands/safru.png"},
+    {image: "./brands/tepikenas.png"},
+    {image: "./brands/morena.png"},
+    {image: "./brands/tidingo.png"}
   ]
   return (
     <div>

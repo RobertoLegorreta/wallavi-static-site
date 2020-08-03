@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import "../../styles.css"
 import "./header.css"
-import logo from "../../assets/images/logo.png"
-import redSocial from "../../assets/images/pngocean.png"
+import logo from "../../assets/images/logo.svg"
+// import instagram from "../../assets/images/instagram.svg"
+import facebook from "../../assets/images/facebook.svg"
+import linkedin from "../../assets/images/linkedin.svg"
 
 const Header = () => {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -24,7 +26,7 @@ const Header = () => {
                             Inventory
                         </p>
                         <p className="descrip-menu">
-                            Simplificando el inventariado
+                            Próximamente
                         </p>
                     </div>
                     <div className="second-line-menu">
@@ -50,7 +52,7 @@ const Header = () => {
                             Rockstars
                         </p>
                         <p className="descrip-menu">
-                            Próximamente
+                            Software Development
                         </p>
                     </div>
                 </div>
@@ -62,7 +64,7 @@ const Header = () => {
         return(
             <div>
                 <div 
-                    className="transparent-section"
+                    className="transparent-section-contact"
                     onClick={() => showContact()}
                 >
                 </div>
@@ -91,9 +93,9 @@ const Header = () => {
                                 Contactar
                             </button>
                             <div className="social-media">
-                                <img src={redSocial} alt=""/>
-                                <img src={redSocial} alt=""/>
-                                <img src={redSocial} alt=""/>
+                                {/* <img src={instagram} alt=""/> */}
+                                <a href="https://www.facebook.com/wallavimx" target="_new"><img src={facebook} alt=""/></a>
+                                <a href="https://www.linkedin.com/company/wallavi" target="_new"><img src={linkedin} alt=""/></a>
                             </div>
                         </div>
                     </form>
@@ -108,6 +110,13 @@ const Header = () => {
 
     const showContact = () => {
         setContactVisible(!contactVisible);
+        if(contactVisible){
+            document.body.style.overflow = null;
+        }
+        else{
+            document.body.style.overflow = 'hidden';
+            document.querySelector('html').scrollTop = window.scrollY;
+        }
     }
 
     return(
@@ -124,12 +133,12 @@ const Header = () => {
                     >
                         Productos y servicios
                     </p>
-                    <button 
+                    {/* <button 
                         className = "contact-button"
                         onClick = {() => showContact()}
                     >
                         Contactar
-                    </button>
+                    </button> */}
                 </div>
             </nav>
             {menuVisible && menu()}

@@ -1,5 +1,5 @@
 .about-me-section{
-    margin-top: 200px;
+    margin-top: 400px;
 }
 
 .about-me-section h2 {
@@ -19,11 +19,14 @@
 }
 
 .images-section {
+    display: none;
+    margin-right: 20px;
     width: 200px;
     height: 200px;
     border-radius: 100%;
     background-size: contain;
     background-position: center;
+    flex: none;
 }
 
 .text-section {
@@ -33,5 +36,22 @@
 
 .body-section p {
     font-size: 18px;
+    text-align: center;
     line-height: 1.3;
+}
+
+@media (max-width: 700px) {
+    .body-section{
+        display: block;
+    }
+    .images-section {
+        margin: 0 auto;
+    }
+    .text-section {
+        margin: 30px auto;
+        width: 94%;
+    }
+    .about-me-section{
+        margin-top: 250px;
+    }
 }

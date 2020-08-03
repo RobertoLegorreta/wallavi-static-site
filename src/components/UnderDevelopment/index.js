@@ -7,7 +7,9 @@ const UnderDevelopment = (props) => {
         <div className="under-develop-section">
             <h2 className="section-h2">{props.title}</h2>
             <div className = "under-develop-body-section">
-                <div className="under-develop-images-section" style={{backgroundImage: `url("${props.image}")`}}></div>
+                <div className="under-develop-images-section">
+                    <img src="./projects/under-development.png"></img>
+                </div>
                 <div className="under-develop-text-section">
                     <p>{props.textTitle}</p>
                     <p>{props.textDescription}</p>

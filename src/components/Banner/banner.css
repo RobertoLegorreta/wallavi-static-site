@@ -1,6 +1,7 @@
 .banner{
-    background-color: #4476d4;
     height: 640px;
+    position: relative;
+    background: linear-gradient(151deg, rgba(35,69,132,1) 0%, rgba(85,144,255,1) 100%);
 }
 
 .banner-title{
@@ -17,13 +18,13 @@
     font-size: 21px;
 }
 
-.banner img{
-    width: 800px;
+.main-img-banner{
+    width: 900px;
     position: absolute;
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: -150px;
+    bottom: -110px;
     user-drag: none; 
     user-select: none;
     -moz-user-select: none;
@@ -31,4 +32,46 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+}
+
+@media (max-width: 900px) {
+    .banner{
+        height: 550px;
+    }
+    .main-img-banner{
+        width: 80%;
+    }
+    .wave{
+        bottom: -7px;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner{
+        height: 500px;
+    }
+    .main-img-banner{
+        width: 90%;
+    }
+    .wave{
+        bottom: -5px;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner{
+        height: 400px;
+    }
+    .main-img-banner{
+        width: 90%;
+    }
+    .wave{
+        bottom: -5px;
+    }
 }
